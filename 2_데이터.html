@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>2. 데이터 요약 정리</title>
+<style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        h3 {
+            color: #34495e;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+        ul ul {
+            list-style-type: circle;
+            margin-left: 25px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #e74c3c;
+        }
+        em {
+            font-style: normal;
+            color: #27ae60;
+        }
+        .note {
+            background-color: #f9f9f9;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>Ⅱ. 데이터 요약 정리</h1>
+<h2>1. 데이터의 이해</h2>
+<ul>
+<li><strong>데이터의 중요성</strong>
+<ul>
+<li>다양한 유형의 정보(기상 정보 등)는 예보 외에 고속도로 사고 위험 예측, 태양광 발전량 예측, 관광 코스 추천, 수산물 어획량 예측 등 <em>다양한 분야에 활용</em>되어 삶의 편리함과 합리적 의사 결정에 기여.</li>
+<li>단순히 정보를 모으는 것을 넘어, 다양한 분석을 통해 <em>새로운 가치 창출</em>.</li>
+</ul>
+</li>
+<li><strong>빅데이터</strong>
+<ul>
+<li>기존 데이터베이스 관리 도구로는 수집, 저장, 관리, 분석하기 어려운 <em>대량의 정형 또는 비정형 데이터</em>.</li>
+<li><strong>특징 (3V)</strong>:
+                    <ul>
+<li><em>규모(Volume)</em>: 데이터 양이 매우 많음.</li>
+<li><em>속도(Velocity)</em>: 데이터 생성, 처리, 변화 속도가 매우 빠름.</li>
+<li><em>다양성(Variety)</em>: 정형 데이터와 함께 비정형 데이터(텍스트, 이미지, 영상, 음성 등) 포함.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>2. 데이터의 종류와 특징</h2>
+<ul>
+<li><strong>정형 데이터</strong>
+<ul>
+<li>미리 정해진 형식과 구조에 따라 저장되고 관리되는 데이터.</li>
+<li><strong>특징</strong>: 고정된 필드에 저장, 일관된 형식, 주로 데이터베이스나 스프레드시트 형태.</li>
+<li><strong>예시</strong>: 이름, 전화번호, 회원 가입 정보, 상품 판매량, 온도, 습도 등.</li>
+</ul>
+</li>
+<li><strong>비정형 데이터</strong>
+<ul>
+<li>미리 정해진 형식이나 구조가 없는 데이터.</li>
+<li><strong>특징</strong>: 유동적인 형식, 분류 및 분석이 어려움.</li>
+<li><strong>예시</strong>: 이미지, 오디오, 비디오, SNS 게시글(텍스트), 웹 문서, 이메일 등.</li>
+</ul>
+</li>
+</ul>
+<h2>3. 데이터의 처리 및 관리</h2>
+<ul>
+<li><strong>데이터 처리 과정</strong>:
+            <p>데이터 수집 → 데이터 저장 → 데이터 가공/분석 → 데이터 표현</p>
+<ul>
+<li><em>데이터 수집</em>: 센서, 카메라, 웹 스크래핑 등.</li>
+<li><em>데이터 저장</em>: 적절한 형식과 장소에 보관.</li>
+<li><em>데이터 가공/분석</em>: 의미 있는 정보로 변환, 패턴 추출 (정렬, 필터링, 통계 분석, 기계 학습 등).</li>
+<li><em>데이터 표현</em>: 그래프, 차트, 시각화 자료 등으로 나타냄.</li>
+</ul>
+</li>
+<li><strong>데이터의 압축</strong>: 데이터의 중복성을 제거하여 파일 크기 줄임.
+            <ul>
+<li><strong>목적</strong>: 저장 공간 절약, 데이터 전송 시간 단축.</li>
+<li><strong>압축 방식</strong>:
+                    <ul>
+<li><em>무손실 압축</em>: 압축 후 복원 시 원본과 100% 동일. 데이터 손실 없어 정확성 중요 시 사용.
+                            (<strong>예시</strong>: ZIP, PNG, GIF, BMP)</li>
+<li><em>손실 압축</em>: 압축 시 원본 일부 제거, 복원 시 원본과 완전히 같지 않음. 용량 효율성 중요 시 사용.
+                            (<strong>예시</strong>: JPG, MP3, MP4) → 압축률 높을수록 품질 저하 심함.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>데이터의 암호화</strong>: 데이터를 알아볼 수 없는 형태로 변환하여 정보 유출이나 오용 방지.
+            <ul>
+<li><strong>목적</strong>: 데이터의 기밀성, 무결성, 가용성 보장.</li>
+<li><strong>활용</strong>: 개인 정보 보호, 금융 거래 보안, 통신 보안.</li>
+</ul>
+</li>
+</ul>
+<h2>4. 데이터의 활용</h2>
+<ul>
+<li><strong>데이터 시각화</strong>
+<ul>
+<li>복잡한 데이터를 그림, 그래프, 차트 등으로 표현하여 쉽게 이해하고 분석.</li>
+<li><strong>목적</strong>: 데이터의 패턴, 추세, 이상치 등을 빠르게 파악.</li>
+<li><strong>예시</strong>: 막대그래프, 꺾은선그래프, 원그래프, 산점도, 워드 클라우드.</li>
+</ul>
+</li>
+<li><strong>빅데이터 활용 사례</strong>
+<ul>
+<li><em>기상 예측</em>: 정확한 날씨 예보 및 어획량 예측, 사고 위험 예측.</li>
+<li><em>의료</em>: 환자 데이터 분석을 통한 질병 예측, 맞춤형 치료법 개발.</li>
+<li><em>교통</em>: 실시간 교통량 분석을 통한 최적 경로 안내, 교통 체증 완화.</li>
+<li><em>마케팅</em>: 고객 구매 이력 분석을 통한 맞춤형 상품 추천, 타겟 마케팅.</li>
+<li><em>도시 문제 해결</em>: CCTV, 센서 데이터 분석으로 범죄 예방, 재난 관리, 스마트 도시 구축.</li>
+</ul>
+</li>
+</ul>
+<div class="note">
+<h3><strong>시험 출제 예상 포인트:</strong></h3>
+<ul>
+<li><strong>빅데이터의 3V 특성</strong> (규모, 속도, 다양성) 정확히 이해.</li>
+<li><strong>정형 데이터와 비정형 데이터</strong>의 특징과 예시 구분.</li>
+<li><strong>데이터 처리 과정</strong>(수집-저장-가공/분석-표현)의 각 단계 역할.</li>
+<li><strong>데이터 압축</strong>의 목적, <em>무손실/손실 압축</em>의 차이점, 각 방식의 특징과 대표적인 파일 형식(JPG, MP3, ZIP, PNG 등) 숙지.</li>
+<li><strong>데이터 암호화</strong>의 목적과 중요성.</li>
+<li><strong>데이터 시각화</strong>의 중요성 및 다양한 표현 방식.</li>
+<li>실생활에서의 <strong>빅데이터 활용 사례</strong>들을 구체적으로 연결하여 설명.</li>
+</ul>
+</div>
+
+<div style="text-align: center; margin-top: 40px;">
+<a href="정보.html" style="
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    ">처음으로</a>
+</div>
+</body>
+</html>

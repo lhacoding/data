@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ⅰ. 컴퓨팅 시스템 요약 정리</title>
+<style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+        h3 {
+            color: #34495e;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+        ul ul {
+            list-style-type: circle;
+            margin-left: 25px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #e74c3c;
+        }
+        em {
+            font-style: normal;
+            color: #27ae60;
+        }
+        .note {
+            background-color: #f9f9f9;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>Ⅰ. 컴퓨팅 시스템 요약 정리</h1>
+<h2>1. 네트워크의 이해와 종류</h2>
+<ul>
+<li><strong>네트워크의 개념</strong>
+<ul>
+<li>서로 다른 기기들이 연결된 통신망.</li>
+<li><em>컴퓨터 네트워크</em>: 유선 또는 무선 통신망으로 연결된 다양한 컴퓨팅 기기.</li>
+</ul>
+</li>
+<li><strong>유선 네트워크</strong>
+<ul>
+<li><strong>특징</strong>: 광케이블, 이더넷 케이블 등을 사용하여 물리적으로 연결.</li>
+<li><strong>장점</strong>: 안정적이고 빠른 데이터 전송.</li>
+<li><strong>단점</strong>: 장소 제약 있음.</li>
+<li><strong>주요 장비</strong>:
+                    <ul>
+<li><em>허브 및 스위치</em>: 여러 컴퓨팅 시스템 연결, 데이터 전송.</li>
+<li><em>라우터</em>: 네트워크와 네트워크 연결, 데이터 전송 경로 지정 (내부-외부 네트워크).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>무선 네트워크</strong>
+<ul>
+<li><strong>특징</strong>: 무선 주파수를 사용하여 연결.</li>
+<li><strong>장점</strong>: 장소 제약 없이 자유로운 사용, <em>사물 인터넷(IoT)</em>을 가능하게 함.</li>
+<li><strong>주요 기술</strong>:
+                    <ul>
+<li><em>무선 AP (액세스 포인트)</em>: 유선 LAN과 무선 LAN 연결, Wi-Fi 인터넷 사용 가능.</li>
+<li><em>방화벽</em>: 외부 불법 접근 및 악의적인 공격 방어 (보안 유지).</li>
+<li><em>전자 태그 (RFID)</em>: 소형 반도체 칩 데이터를 무선 주파수로 읽음. (예: 교통카드, 하이패스)</li>
+<li><em>와이파이 (Wi-Fi)</em>: 가까운 거리 무선 데이터 통신. 저렴하고 빠름.</li>
+<li><em>블루투스 (Bluetooth)</em>: 10m 이내 근거리 무선 통신. (예: 무선 이어폰) → <strong>페어링</strong> 과정 필요.</li>
+<li><em>근거리 무선 통신 (NFC)</em>: 10cm 이내 비접촉 무선 통신. (예: 스마트폰 결제, 출입 통제)</li>
+<li><em>디스플레이 공유 기술 (미러링)</em>: 서로 다른 기기 화면 공유. (예: 미라캐스트, DLNA)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>2. 네트워크 환경 구성 및 활용</h2>
+<ul>
+<li><strong>인터넷 연결</strong>
+<ul>
+<li>랜 카드 연결 또는 Wi-Fi 사용 후 운영체제에서 네트워크 환경 설정.</li>
+<li><strong>IP 주소</strong>: 인터넷에서 사용하는 주소 (IPv4, IPv6). 윈도우에서 <code>cmd</code> → <code>ipconfig</code>로 확인 가능.</li>
+</ul>
+</li>
+<li><strong>네트워크에서의 공유</strong>
+<ul>
+<li>다른 컴퓨터 시스템의 데이터 접근 및 프린터, 파일 서버 등 장치 공유 가능.</li>
+<li><em>개인용 컴퓨터 공유</em>: 폴더나 프린터를 공유 설정.</li>
+<li><em>클라우드 컴퓨팅</em>: 시간과 장소에 상관없이 네트워크로 연결된 컴퓨팅 자원을 서비스 형태로 사용. 여러 사람 협업 가능.</li>
+</ul>
+</li>
+</ul>
+<h2>3. 사물 인터넷 (IoT)</h2>
+<ul>
+<li><strong>개념</strong>
+<ul>
+<li>일상생활 속에서 다양한 물건이 인터넷에 연결되어 데이터를 주고받는 시스템.</li>
+<li>컴퓨터 외에 센서와 통신 장치가 있는 각종 사물들이 네트워크로 연결된 환경.</li>
+</ul>
+</li>
+<li><strong>사물의 범위</strong>
+<ul>
+<li>컴퓨팅 기기(컴퓨터, 태블릿)뿐 아니라 스피커, 냉장고, 전등, TV 등 주변의 모든 구체적인 존재.</li>
+</ul>
+</li>
+<li><strong>피지컬 컴퓨팅</strong>
+<ul>
+<li>컴퓨터와 현실 세계를 연결하는 시스템.</li>
+<li><strong>구성</strong>:
+                    <ul>
+<li><em>센서 (입력 장치)</em>: 온도, 밝기, 동작 등 주변 상황 인식.</li>
+<li><em>마이크로컨트롤러 (처리 장치)</em>: 센서 정보 처리 및 액추에이터 제어.</li>
+<li><em>액추에이터 (출력 장치/구동기)</em>: 마이크로컨트롤러의 제어에 따라 물리적으로 동작.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>활용 사례</strong>
+<ul>
+<li>스마트워치 건강 관리, 실시간 버스 위치 추적.</li>
+<li>의료: 환자 건강 상태 실시간 모니터링.</li>
+<li>건설: 드론, 로봇, 센서를 활용한 효율 및 안전 관리.</li>
+<li>스마트홈: 조명, 온도, 가전제품 등 원격 제어 및 상호 연결.</li>
+<li>교통: 자율주행 자동차, 지능형 교통 시스템.</li>
+</ul>
+</li>
+</ul>
+<div class="note">
+<h3><strong>시험 출제 예상 포인트:</strong></h3>
+<ul>
+<li><strong>네트워크 종류</strong>: 유선/무선 네트워크의 특징, 장단점, 주요 장비(허브, 스위치, 라우터)의 역할 비교.</li>
+<li><strong>무선 네트워크 기술</strong>: RFID, Wi-Fi, 블루투스, NFC의 특징과 실생활 적용 사례를 구분하여 설명. 특히 <em>페어링</em>의 의미.</li>
+<li><strong>IP 주소</strong>: 개념 및 확인 방법.</li>
+<li><strong>클라우드 컴퓨팅</strong>: 개념, 장점, 활용 사례.</li>
+<li><strong>사물 인터넷 (IoT)</strong>: 개념, '사물'의 의미, 피지컬 컴퓨팅의 구성 요소(센서, 마이크로컨트롤러, 액추에이터)와 각 역할, 그리고 다양한 실생활 활용 사례.</li>
+<li>각 기술의 <strong>장점과 단점, 활용 예시</strong>를 명확히 이해하는 것이 중요합니다.</li>
+</ul>
+</div>
+
+<div style="text-align: center; margin-top: 40px;">
+<a href="정보.html" style="
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    ">처음으로</a>
+</div>
+</body>
+</html>
